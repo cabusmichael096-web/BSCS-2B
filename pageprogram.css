@@ -1,0 +1,335 @@
+/* =====================================================
+   INDIVIDUAL PROGRAM PAGE
+===================================================== */
+
+.individual-program {
+
+    background: var(--dark-green);
+
+}
+
+
+/* HERO */
+
+.individual-hero {
+
+    min-height: 70vh;
+
+    padding: 150px 8% 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+
+        linear-gradient(
+            rgba(3,25,18,0.82),
+            rgba(3,25,18,0.95)
+        ),
+
+        url("images/programming.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.individual-hero p {
+
+    color: var(--light-green);
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.individual-hero h1 {
+
+    font-size:
+        clamp(55px, 9vw, 110px);
+
+    line-height: 1;
+
+    margin: 20px 0;
+
+}
+
+
+.individual-hero span {
+
+    color: var(--gray);
+
+    font-size: 20px;
+
+}
+
+
+/* INFORMATION */
+
+.individual-content {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 110px 30px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.individual-content img {
+
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+
+}
+
+
+.individual-content h2 {
+
+    font-size: 45px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.individual-content p {
+
+    color: var(--gray);
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* LEARNING SECTION */
+
+.individual-section {
+
+    padding: 110px 8%;
+
+    background: #04150f;
+
+    text-align: center;
+
+}
+
+
+.individual-section > h2 {
+
+    font-size: 45px;
+
+    margin-bottom: 60px;
+
+}
+
+
+.individual-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.individual-grid > div {
+
+    padding: 35px 25px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border: 1px solid
+        rgba(255,255,255,0.08);
+
+    transition: 0.3s;
+
+}
+
+
+.individual-grid > div:hover {
+
+    transform: translateY(-8px);
+
+    border-color:
+        var(--light-green);
+
+}
+
+
+.individual-grid span {
+
+    font-size: 45px;
+
+}
+
+
+.individual-grid h3 {
+
+    margin: 20px 0 10px;
+
+}
+
+
+.individual-grid p {
+
+    color: var(--gray);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+/* BACK */
+
+.program-back {
+
+    padding: 80px 20px;
+
+    text-align: center;
+
+}
+
+
+.program-back a {
+
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    border: 1px solid
+        var(--light-green);
+
+    border-radius: 50px;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+}
+
+
+.program-back a:hover {
+
+    background:
+        var(--light-green);
+
+    color:
+        var(--dark-green);
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .individual-hero {
+
+        min-height: 70vh;
+
+        padding: 160px 20px 70px;
+
+        text-align: center;
+
+        justify-content: center;
+
+    }
+
+
+    .individual-hero h1 {
+
+        font-size: 55px;
+
+    }
+
+
+    .individual-hero span {
+
+        font-size: 15px;
+
+    }
+
+
+    .individual-content {
+
+        grid-template-columns: 1fr;
+
+        padding: 80px 20px;
+
+        gap: 40px;
+
+    }
+
+
+    .individual-content img {
+
+        height: 280px;
+
+    }
+
+
+    .individual-content h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .individual-section {
+
+        padding: 80px 20px;
+
+    }
+
+
+    .individual-section > h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .individual-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
